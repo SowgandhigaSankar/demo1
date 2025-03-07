@@ -1,0 +1,177 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* 🎨 Landing Page Background */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://thumbs.dreamstime.com/z/cartoon-chat-10067849.jpg') no-repeat center center/cover;
+    color: rgb(3, 3, 18);
+    text-align: center;
+    position: relative;
+    background-size: cover;
+}
+
+/* Dark Overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* Centered Content */
+.content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+h1 span {
+    color: #10043d;
+}
+
+p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* 🎉 "Get Started" Button */
+.btn {
+    background: #37020e;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.btn:hover {
+    background: #ff4b2b;
+    transform: scale(1.05);
+}
+
+/* ========================== */
+/* 🗨 CHAT PAGE STYLING */
+/* ========================== */
+.chat-page {
+    background: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Chat Container */
+.chat-container {
+    width: 350px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Header */
+.chat-header {
+    background: #007bff;
+    color: white;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Messages */
+.chat-box {
+    padding: 15px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.message {
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin: 8px 0;
+    max-width: 70%;
+}
+
+.received {
+    background: #e0e0e0;
+    align-self: flex-start;
+}
+
+.sent {
+    background: #007bff;
+    color: white;
+    align-self: flex-end;
+    text-align: right;
+    float: right;
+}
+
+/* Input Box */
+.chat-input {
+    display: flex;
+    padding: 10px;
+    background: #f9f9f9;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.chat-input button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chat-input button:hover {
+    background: #0056b3;
+}
+
+/* 🔙 Back Button */
+.back-btn {
+    display: block;
+    margin: 10px auto;
+    background: #333;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.back-btn:hover {
+    background: #555;
+}
